@@ -7,7 +7,9 @@ function getLargestAmount(message) {
 }
 
 function getExpenseDescription(message) {
-  return "TODO";
+  var sender = message.getFrom();
+  var subject = message.getSubject();
+  return sender + " | " + subject;
 }
 
 function getSheetUrl() {
